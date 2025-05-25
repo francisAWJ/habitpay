@@ -17,15 +17,15 @@ class ProfilePage extends StatelessWidget {
                 children: [
                   const CircleAvatar(
                     radius: 50,
-                    backgroundImage: NetworkImage("https://i.pravatar.cc/250?u=mail@ashallendesign.co.uk"), // Replace with your image
+                    backgroundImage: NetworkImage("https://i.pravatar.cc/250?u=mail@ashallendesign.co.uk"),
                   ),
                   const SizedBox(height: 16),
                   Text(
-                    'John Doe', // Replace with user's name
+                    'John Doe',
                     style: Theme.of(context).textTheme.headlineLarge,
                   ),
                   Text(
-                    'john.doe@example.com', // Replace with user's email
+                    'john.doe@example.com',
                     style: Theme.of(context).textTheme.bodyMedium,
                   ),
                 ],
@@ -70,7 +70,7 @@ class ProfilePage extends StatelessWidget {
               icon: Icons.dark_mode,
               title: 'Mode Gelap',
               trailing: Switch(
-                value: false, // Replace with your theme state
+                value: false,
                 onChanged: (value) {},
               ),
               onTap: () {},
@@ -79,7 +79,7 @@ class ProfilePage extends StatelessWidget {
             Center(
               child: ElevatedButton(
                 onPressed: () {
-                  // Add logout logic here
+                  // TODO: add logout logic
                 },
                 style: ElevatedButton.styleFrom(
                   foregroundColor: Colors.white,
