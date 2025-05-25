@@ -66,6 +66,7 @@ class TransferTopupCard extends StatelessWidget {
     return SizedBox(
       width: double.infinity,
       child: Card(
+        margin: EdgeInsets.fromLTRB(24, 0, 24, 16),
         child: Padding(
           padding: EdgeInsets.all(16),
           child: Column(
