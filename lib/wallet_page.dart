@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class BalanceCardAdvanced extends StatelessWidget {
+class BasicBalanceCard extends StatelessWidget {
   final double balance;
   
-  const BalanceCardAdvanced({
+  const BasicBalanceCard({
     super.key,
     required this.balance,  
   });
@@ -49,12 +49,6 @@ class BalanceCardAdvanced extends StatelessWidget {
                     color: Colors.white,
                   ),
                 ),
-
-                // Spacing
-                SizedBox(height: 12),
-
-                // Transfer card
-                TransferTopupCard(),
               ],
             ),
           ),
