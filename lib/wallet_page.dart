@@ -33,12 +33,10 @@ class BalanceCardAdvanced extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 // "Saldo Anda" text
-                const Text(
+                Text(
                   'Saldo Anda',
-                  style: TextStyle(
-                    fontSize: 20, 
-                    color: Colors.white,
-                    fontWeight: FontWeight.w500,
+                  style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                    color: Colors.white
                   ),
                 ),
 
