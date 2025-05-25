@@ -113,7 +113,8 @@ class AppState extends State<App> {
           child: SingleChildScrollView(
             child: Column(
               children: <Widget>[
-                BalanceCardAdvanced(balance: 0),
+                BasicBalanceCard(balance: 0),
+                TransferTopupCard(),
               ],
             ),
           )
