@@ -35,7 +35,7 @@ class BalanceCardAdvanced extends StatelessWidget {
                 // "Saldo Anda" text
                 Text(
                   'Saldo Anda',
-                  style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                  style: Theme.of(context).textTheme.headlineLarge?.copyWith(
                     color: Colors.white
                   ),
                 ),
