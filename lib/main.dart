@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:habitpay/profile_page.dart';
 import 'package:habitpay/wallet_page.dart';
 import 'home_page.dart';
 
@@ -119,7 +120,7 @@ class AppState extends State<App> {
         ),
         
         // Profile page
-        Text('profile'),
+        const ProfilePage(),
       ][currentPageIndex],
     );
   }
