@@ -1,6 +1,6 @@
-# habitpay
+# HabitPay
 
-A new Flutter project.
+A habit-based savings app.
 
 ## Getting Started
 
