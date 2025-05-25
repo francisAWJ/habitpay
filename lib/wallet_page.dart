@@ -150,12 +150,6 @@ class TransferTopupCard extends StatelessWidget {
               // Spacing
               const SizedBox(height: 12),
 
-              // Divider
-              const Divider(
-                thickness: 2,
-                color: Colors.black,
-              ),
-
               // Spacing
               const SizedBox(height: 12),
 
