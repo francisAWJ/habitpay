@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'register_page.dart';
+import 'package:habitpay/auth_widgets.dart';
+import 'package:habitpay/register_page.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -18,9 +19,9 @@ class LoginPage extends StatelessWidget {
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 32),
-            _EmailInput(),
+            EmailInput(),
             const SizedBox(height: 16),
-            _PasswordInput(),
+            PasswordInput(),
             const SizedBox(height: 24),
             _LoginButton(),
             const SizedBox(height: 16),
@@ -41,57 +42,57 @@ class LoginPage extends StatelessWidget {
   }
 }
 
-class _EmailInput extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return TextFormField(
-      decoration: const InputDecoration(
-        labelText: 'Email',
-        prefixIcon: Icon(Icons.email),
-        border: OutlineInputBorder(),
-      ),
-      keyboardType: TextInputType.emailAddress,
-      onChanged: (email) {
-        // Update email in your state management
-      },
-      validator: (value) {
-        if (value == null || value.isEmpty) {
-          return 'Please enter your email';
-        }
-        if (!value.contains('@')) {
-          return 'Please enter a valid email';
-        }
-        return null;
-      },
-    );
-  }
-}
+// class _EmailInput extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return TextFormField(
+//       decoration: const InputDecoration(
+//         labelText: 'Email',
+//         prefixIcon: Icon(Icons.email),
+//         border: OutlineInputBorder(),
+//       ),
+//       keyboardType: TextInputType.emailAddress,
+//       onChanged: (email) {
+//         // Update email in your state management
+//       },
+//       validator: (value) {
+//         if (value == null || value.isEmpty) {
+//           return 'Please enter your email';
+//         }
+//         if (!value.contains('@')) {
+//           return 'Please enter a valid email';
+//         }
+//         return null;
+//       },
+//     );
+//   }
+// }
 
-class _PasswordInput extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return TextFormField(
-      decoration: const InputDecoration(
-        labelText: 'Password',
-        prefixIcon: Icon(Icons.lock),
-        border: OutlineInputBorder(),
-      ),
-      obscureText: true,
-      onChanged: (password) {
-        // Update password in your state management
-      },
-      validator: (value) {
-        if (value == null || value.isEmpty) {
-          return 'Please enter your password';
-        }
-        if (value.length < 6) {
-          return 'Password must be at least 6 characters';
-        }
-        return null;
-      },
-    );
-  }
-}
+// class _PasswordInput extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return TextFormField(
+//       decoration: const InputDecoration(
+//         labelText: 'Password',
+//         prefixIcon: Icon(Icons.lock),
+//         border: OutlineInputBorder(),
+//       ),
+//       obscureText: true,
+//       onChanged: (password) {
+//         // Update password in your state management
+//       },
+//       validator: (value) {
+//         if (value == null || value.isEmpty) {
+//           return 'Please enter your password';
+//         }
+//         if (value.length < 6) {
+//           return 'Password must be at least 6 characters';
+//         }
+//         return null;
+//       },
+//     );
+//   }
+// }
 
 class _LoginButton extends StatelessWidget {
   @override
