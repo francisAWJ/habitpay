@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:habitpay/login_page.dart';
 import 'package:habitpay/profile_page.dart';
+import 'package:habitpay/register_page.dart';
 import 'package:habitpay/wallet_page.dart';
 import 'home_page.dart';
 
@@ -18,7 +20,18 @@ class HabitPay extends StatelessWidget {
         fontFamily: 'Urbanist',
         primarySwatch: Colors.lightBlue,
       ), 
-      home: const App(),
+      initialRoute: '/login', // Start with login page
+      routes: {
+        '/login': (context) => const LoginPage(),
+        '/register': (context) => const RegisterPage(),
+        '/home': (context) => const App(), // Main app with navigation
+      },
+      // Optional: Handle unknown routes
+      onGenerateRoute: (settings) {
+        return MaterialPageRoute(
+          builder: (context) => const LoginPage(), // Fallback to login
+        );
+      },
     );
   }
 }
