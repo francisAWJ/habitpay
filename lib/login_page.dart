@@ -1,5 +1,45 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'register_page.dart';
+
+class LoginPage extends StatelessWidget {
+  const LoginPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Text(
+              'Welcome Back',
+              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 32),
+            _EmailInput(),
+            const SizedBox(height: 16),
+            _PasswordInput(),
+            const SizedBox(height: 24),
+            _LoginButton(),
+            const SizedBox(height: 16),
+            TextButton(
+              onPressed: () {
+                // Navigate to register page
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const RegisterPage()),
+                );
+              },
+              child: const Text('Don\'t have an account? Register'),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
 
 class _EmailInput extends StatelessWidget {
   @override
