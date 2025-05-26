@@ -72,6 +72,7 @@ class AppState extends State<App> {
               )
             ),
           ),
+          automaticallyImplyLeading: false,
         ),
 
       floatingActionButton: FloatingActionButton(
