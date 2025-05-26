@@ -20,16 +20,15 @@ class HabitPay extends StatelessWidget {
         fontFamily: 'Urbanist',
         primarySwatch: Colors.lightBlue,
       ), 
-      initialRoute: '/login', // Start with login page
+      initialRoute: '/login',
       routes: {
         '/login': (context) => const LoginPage(),
         '/register': (context) => const RegisterPage(),
-        '/home': (context) => const App(), // Main app with navigation
+        '/home': (context) => const App(),
       },
-      // Optional: Handle unknown routes
       onGenerateRoute: (settings) {
         return MaterialPageRoute(
-          builder: (context) => const LoginPage(), // Fallback to login
+          builder: (context) => const LoginPage(),
         );
       },
     );
