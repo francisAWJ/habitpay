@@ -75,7 +75,11 @@ class TransferTopupCard extends StatelessWidget {
               // Transfer title
               Text(
                 'Transfer',
-                style: Theme.of(context).textTheme.headlineSmall
+                // style: Theme.of(context).textTheme.headlineSmall
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w600
+                ),
               ),
 
               // Spacing
@@ -146,7 +150,11 @@ class TransferTopupCard extends StatelessWidget {
               // Top up title
               Text(
                 'Top Up',
-                style: Theme.of(context).textTheme.headlineSmall
+                // style: Theme.of(context).textTheme.headlineSmall
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w600
+                ),
               ),
 
               // Spacing
