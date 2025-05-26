@@ -159,7 +159,11 @@ class ServicesCard extends StatelessWidget {
               // Title
               Text(
                 'Layanan',
-                style: Theme.of(context).textTheme.headlineSmall
+                // style: Theme.of(context).textTheme.headlineSmall
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w600
+                ),
               ),
 
               // Spacing
@@ -270,7 +274,11 @@ class StatusCard extends StatelessWidget {
               // Title
               Text(
                 'Status Anda',
-                style: Theme.of(context).textTheme.headlineSmall
+                // style: Theme.of(context).textTheme.headlineSmall
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w600
+                ),
               ),
             ],
           ),
