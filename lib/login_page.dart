@@ -16,10 +16,13 @@ class LoginPage extends StatelessWidget {
           children: [
             // Logo
             Image.asset(
-              'assets/logo.jpg',
-              height: 100,
+              'assets/logo.png',
+              height: 200,
             ),
-            
+
+            // Spacing
+            SizedBox(height: 20),
+
             const Text(
               'Welcome Back',
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
