@@ -14,6 +14,12 @@ class LoginPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            // Logo
+            Image.asset(
+              'assets/logo.jpg',
+              height: 100,
+            ),
+            
             const Text(
               'Welcome Back',
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
