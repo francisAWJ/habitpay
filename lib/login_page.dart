@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:habitpay/auth_widgets.dart';
 import 'package:habitpay/main.dart';
 import 'package:habitpay/register_page.dart';
