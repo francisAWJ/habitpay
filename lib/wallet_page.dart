@@ -253,26 +253,9 @@ class ConnectedAccountsCard extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  // Google button
-                  _buildAccountButton(
-                    context,
-                    'Google',
-                    'assets/images/google_logo.png', // Replace with your actual asset path
-                  ),
-                  
-                  // Facebook button
-                  _buildAccountButton(
-                    context,
-                    'Facebook',
-                    'assets/images/facebook_logo.png', // Replace with your actual asset path
-                  ),
-                  
-                  // Apple button
-                  _buildAccountButton(
-                    context,
-                    'Apple',
-                    'assets/images/apple_logo.png', // Replace with your actual asset path
-                  ),
+                  _buildSocialButton('assets/bca.png'),
+                  _buildSocialButton('assets/gojek.png'),
+                  _buildSocialButton('assets/ovo.png'),
                 ],
               ),
             ],
@@ -282,28 +265,33 @@ class ConnectedAccountsCard extends StatelessWidget {
     );
   }
 
-  Widget _buildAccountButton(BuildContext context, String label, String imagePath) {
-    return OutlinedButton(
-      onPressed: () {
-        // Handle button press
-      },
-      style: OutlinedButton.styleFrom(
-        padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(8),
-        ),
-      ),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Image.asset(
-            imagePath,
-            width: 24,
-            height: 24,
+  Widget _buildSocialButton(String imagePath) {
+    return Container(
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(12),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.1),
+            blurRadius: 4,
+            offset: Offset(0, 2),
           ),
-          SizedBox(width: 8),
-          Text(label),
         ],
+      ),
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          onTap: () {},
+          borderRadius: BorderRadius.circular(12),
+          child: Padding(
+            padding: EdgeInsets.all(12),
+            child: Image.asset(
+              imagePath,
+              width: 24,
+              height: 24,
+            ),
+          ),
+        ),
       ),
     );
   }
