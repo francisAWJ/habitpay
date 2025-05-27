@@ -127,6 +127,7 @@ class AppState extends State<App> {
             child: Column(
               children: <Widget>[
                 BasicBalanceCard(balance: 0),
+                ConnectedAccountsCard(),
                 TransferTopupCard(),
               ],
             ),
