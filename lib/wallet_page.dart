@@ -222,3 +222,38 @@ class TransferTopupCard extends StatelessWidget {
     );
   }
 }
+
+class ConnectedAccountsCard extends StatelessWidget {
+  const ConnectedAccountsCard({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: double.infinity,
+      child: Card(
+        margin: EdgeInsets.fromLTRB(24, 0, 24, 16),
+        child: Padding(
+          padding: EdgeInsets.all(16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              // Title
+              Text(
+                'Akun Terhubung',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w600
+                ),
+              ),
+
+              // Spacing
+              const SizedBox(height: 12),
+
+              
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
