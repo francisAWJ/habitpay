@@ -114,7 +114,7 @@ class AppState extends State<App> {
               children: <Widget>[
                 BalanceCard(balance: 0),
                 ServicesCard(),
-                StatusCard(),
+                NotificationCard(),
               ],
             ),
           )
