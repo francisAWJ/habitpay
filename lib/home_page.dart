@@ -257,8 +257,8 @@ class ServicesCard extends StatelessWidget {
   }
 }
 
-class StatusCard extends StatelessWidget {
-  const StatusCard({super.key});
+class NotificationCard extends StatelessWidget {
+  const NotificationCard({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -273,13 +273,19 @@ class StatusCard extends StatelessWidget {
             children: [
               // Title
               Text(
-                'Status Anda',
+                'Notifikasi',
                 // style: Theme.of(context).textTheme.headlineSmall
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.w600
                 ),
               ),
+
+              // Spacing
+              SizedBox(height: 20),
+              
+              // Text notification
+              Text('Selamat datang di HabitPay, John Doe.')
             ],
           ),
         ),
