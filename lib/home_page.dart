@@ -285,7 +285,18 @@ class NotificationCard extends StatelessWidget {
               SizedBox(height: 20),
               
               // Text notification
-              Text('Selamat datang di HabitPay, John Doe.')
+              Text(
+                'Selamat datang di HabitPay, John Doe.',
+                style: TextStyle(
+                  fontSize: 18,
+                ),
+              ),
+              Text(
+                'Saat ini anda tidak ada notifikasi.',
+                style: TextStyle(
+                  fontSize: 18
+                ),
+              )
             ],
           ),
         ),
